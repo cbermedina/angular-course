@@ -13,6 +13,7 @@ import { ExampleNgClassComponent } from './example-ng-class/example-ng-class.com
 import { ExampleNgStyleComponent } from './example-ng-style/example-ng-style.component';
 import { InputFormatDirective } from './input-format.directive';
 import { ExampleCustomDirectivesComponent } from './example-custom-directives/example-custom-directives.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ExampleCustomDirectivesComponent } from './example-custom-directives/ex
     ExampleNgClassComponent,
     ExampleNgStyleComponent,
     InputFormatDirective,
-    ExampleCustomDirectivesComponent
+    ExampleCustomDirectivesComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule
