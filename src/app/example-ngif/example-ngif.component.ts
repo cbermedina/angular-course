@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleNgifComponent {
 
- courses=[
-   1,
-   2,
-   3,
-   4,
-   5
- ]
+  courses = [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
 
 }

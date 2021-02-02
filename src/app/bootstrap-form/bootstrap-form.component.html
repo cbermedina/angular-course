@@ -1,0 +1,36 @@
+<h1>Adding Validation</h1>
+<form>
+  <div class="form-group">
+    <label for="firstName"></label>
+    <input required ngModel name="firstName" #firstName="ngModel" (change)="log(firstName)" type="text"
+      class="form-control">
+    <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">First name is required</div>
+  </div>
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea ngModel id="comment" cols="30" rows="10" class="form-control"></textarea>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>
+
+
+<h1>Specific Validation Errors</h1>
+<form>
+  <div class="form-group">
+    <label for="firstNameOne"></label>
+    <input required ngModel minlength="3" maxlength="10" pattern="banana" id="firstNameOne" name="firstNameOne"
+      #firstNameOne="ngModel" (change)="log(firstNameOne)" type="text" class="form-control">
+    <div class="alert alert-danger" *ngIf="firstNameOne.touched && !firstNameOne.valid">
+      <div *ngIf="firstNameOne.errors.required">First name one is required</div>
+      <div *ngIf="firstNameOne.errors.minlength">First name one should be minimum
+        {{firstNameOne.errors.minlength.requiredLength}}
+        characters.</div>
+      <div *ngIf="firstNameOne.errors.pattern">First name one doesn't match the pattern</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="commentOne">Comment</label>
+    <textarea id="commentOne" cols="30" rows="10" class="form-control"></textarea>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>

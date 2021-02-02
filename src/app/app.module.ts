@@ -14,6 +14,9 @@ import { ExampleNgStyleComponent } from './example-ng-style/example-ng-style.com
 import { InputFormatDirective } from './input-format.directive';
 import { ExampleCustomDirectivesComponent } from './example-custom-directives/example-custom-directives.component';
 import { ZippyComponent } from './zippy/zippy.component';
+import { BootstrapFormComponent } from './bootstrap-form/bootstrap-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StylingInvalidInputFieldsComponent } from './styling-invalid-input-fields/styling-invalid-input-fields.component';
 
 @NgModule({
   declarations: [
@@ -29,10 +32,14 @@ import { ZippyComponent } from './zippy/zippy.component';
     ExampleNgStyleComponent,
     InputFormatDirective,
     ExampleCustomDirectivesComponent,
-    ZippyComponent
+    ZippyComponent,
+    BootstrapFormComponent,
+    StylingInvalidInputFieldsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
