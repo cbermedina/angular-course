@@ -17,6 +17,7 @@ import { ZippyComponent } from './zippy/zippy.component';
 import { BootstrapFormComponent } from './bootstrap-form/bootstrap-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StylingInvalidInputFieldsComponent } from './styling-invalid-input-fields/styling-invalid-input-fields.component';
+import { NgFormComponent } from './ng-form/ng-form.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { StylingInvalidInputFieldsComponent } from './styling-invalid-input-fiel
     ExampleCustomDirectivesComponent,
     ZippyComponent,
     BootstrapFormComponent,
-    StylingInvalidInputFieldsComponent
+    StylingInvalidInputFieldsComponent,
+    NgFormComponent
   ],
   imports: [
     BrowserModule,
