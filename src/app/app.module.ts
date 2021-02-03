@@ -18,6 +18,7 @@ import { BootstrapFormComponent } from './bootstrap-form/bootstrap-form.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StylingInvalidInputFieldsComponent } from './styling-invalid-input-fields/styling-invalid-input-fields.component';
 import { NgFormComponent } from './ng-form/ng-form.component';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NgFormComponent } from './ng-form/ng-form.component';
     ZippyComponent,
     BootstrapFormComponent,
     StylingInvalidInputFieldsComponent,
-    NgFormComponent
+    NgFormComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
