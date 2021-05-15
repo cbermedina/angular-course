@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StylingInvalidInputFieldsComponent } from './styling-invalid-input-fields/styling-invalid-input-fields.component';
 import { NgFormComponent } from './ng-form/ng-form.component';
 import { CourseComponent } from './course/course.component';
+import { FormArrayComponent } from './form-array/form-array.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CourseComponent } from './course/course.component';
     BootstrapFormComponent,
     StylingInvalidInputFieldsComponent,
     NgFormComponent,
-    CourseComponent
+    CourseComponent,
+    FormArrayComponent
   ],
   imports: [
     BrowserModule,
