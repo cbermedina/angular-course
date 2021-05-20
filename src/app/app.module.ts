@@ -20,6 +20,8 @@ import { StylingInvalidInputFieldsComponent } from './styling-invalid-input-fiel
 import { NgFormComponent } from './ng-form/ng-form.component';
 import { CourseComponent } from './course/course.component';
 import { FormArrayComponent } from './form-array/form-array.component';
+import { FormBuilderComponent } from './form-builder/form-builder.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { FormArrayComponent } from './form-array/form-array.component';
     StylingInvalidInputFieldsComponent,
     NgFormComponent,
     CourseComponent,
-    FormArrayComponent
+    FormArrayComponent,
+    FormBuilderComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,
